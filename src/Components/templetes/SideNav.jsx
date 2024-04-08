@@ -32,9 +32,9 @@ function SideNav() {
           <div className="flex flex-col">
           <h1 className="text-2xl font-bold text-zinc-200 my-2 ">Website Info.</h1>
            
-           <NavLink to="/about" className="text-lg p-4 text-zinc-300 font-medium duration-100  hover:bg-[#e8e4e23d]  hover:text-white rounded-xl"> <i className="mr-1 ri-book-line"></i> About Cine<span className="text-[#ff661fdd] ">Flix</span></NavLink>
+           <NavLink to="/about" className="text-lg p-4 text-zinc-300 font-medium duration-100  hover:bg-[#e8e4e23d]  hover:text-white rounded-xl"> <i className="mr-1 ri-book-line"></i> About</NavLink>
            <NavLink  className="text-lg p-4 text-zinc-300 font-medium duration-100  hover:bg-[#e8e4e23d]  hover:text-white rounded-xl"> <i className=" mr-1 ri-phone-line"></i> Contact Us</NavLink>
-           <button onClick={handleLogout} className="text-lg p-4 text-zinc-300 font-medium duration-100 text-left  hover:bg-[#e8e4e23d]  hover:text-white rounded-xl"><i className="mr-3 ri-logout-box-line"></i>log out ( {user?.displayName} )</button>
+           <button onClick={handleLogout} className="text-lg p-4 text-zinc-300 font-medium duration-100 text-left  hover:bg-[#e8e4e23d]  hover:text-white rounded-xl"><i className="mr-3 ri-logout-box-line truncate"></i>log out {user?.displayName}</button>
           </div>
 
       </div>

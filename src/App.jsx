@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <>
-      <div className="w-screen bg-[#1F1E24] flex h-screen">
+      <div className="w-screen h-screen bg-[#1F1E24] flex ">
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
