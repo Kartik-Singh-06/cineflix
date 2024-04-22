@@ -7,6 +7,7 @@ import Cart from "./templetes/Cart";
 import axios from "../utils/axios";
 import { CardShimmer } from "./Shimmer/CardShimmer";
 function Movie() {
+  document.title = "Cineflex | movie";
     const navigate = useNavigate()
     const [category, setCategory] = useState("now_playing")
     const [movie,setMovie] = useState([])

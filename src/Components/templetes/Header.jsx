@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Header({ data }) {
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <div

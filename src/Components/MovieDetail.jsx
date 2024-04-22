@@ -12,6 +12,7 @@ import {
 import { ComponentShimmer } from "./Shimmer/ComponentShimmer";
 
 function MovieDetail() {
+
   const { pathname } = useLocation();
   const { info } = useSelector((state) => state.movie);
   const navigate = useNavigate();

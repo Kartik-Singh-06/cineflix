@@ -16,7 +16,7 @@ const Home = () => {
   const getBanner = async () => {
     try {
       const { data } = await axios.get(`trending/all/day`);
-     console.log(data);
+    //  console.log(data);
       let random =
         data.results[Math.floor(Math.random() * data.results.length)];
       setBanner(random);

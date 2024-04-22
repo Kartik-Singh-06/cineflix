@@ -11,7 +11,6 @@ function TopNav() {
      const getSearchItem = async ()=>{
       try{
         const {data} = await axios.get(`search/multi?query=${searchItem}`)
-
         setSearch(data?.results)
       }
       catch(err){
