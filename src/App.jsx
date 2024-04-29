@@ -20,6 +20,7 @@ import { addUser, removeUser } from "./store/reducers/userSlice";
 
 const App = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -27,6 +28,7 @@ const App = () => {
         dispatch(addUser({ uid: uid, email: email, displayName: displayName }));
       } else {
         dispatch(removeUser());
+        navigate("/");
       }
     });
   }, []);

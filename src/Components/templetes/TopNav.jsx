@@ -18,10 +18,16 @@ function TopNav() {
       }
      }
       useEffect(()=>{
-        getSearchItem();
+        // add debouncing to the search to optimise performance.
+        const searchDelay = setTimeout(()=>{
+          getSearchItem()
+       },1000)
+       return ()=>{
+        clearTimeout(searchDelay)
+       }
       },[searchItem])
 
-  //  console.log(search);
+   console.log(search);
   return (
     <>
       <div className="w-full h-[10vh] z-10 relative py-2">

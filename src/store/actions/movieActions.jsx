@@ -22,7 +22,7 @@ try{
       watchproviders : watchproviders.data.results.IN,
    }
    dispatch(loadDetail(theultimatedetails))
-   console.log(theultimatedetails);
+   // console.log(theultimatedetails);
 }
 catch(err){
   console.error("Error : ",err);

@@ -8,8 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 import { store } from "./store/Store.jsx";
 
 
-const isMobile = window.innerWidth < 900; // Assuming 768px is the threshold for mobile screens
-
+const isMobile = window.innerWidth < 900;
 const rootComponent = isMobile ? <UpdateNotification /> : <App />;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
