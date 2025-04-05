@@ -6,7 +6,7 @@ function Cart({data,title}) {
       <div className="max-w-screen-2xl justify-center  flex mx-auto gap-10 pb-[5vw] flex-wrap bg-[#1F1E24]">
         {data.map((item,index)=>(
          <Link to={`/${item.media_type || title }/details/${item.id}`} key={index} className="relative">
-               <div  className="w-[16vw] flex-shrink-0 rounded-md shadow-xl rounded-lg h-[20vw] bg-zinc-500">
+               <div  className="w-[16vw] flex-shrink-0  shadow-xl rounded-lg h-[20vw] bg-zinc-500">
                <img
                 className="object-cover rounded-md object-[center] h-full w-full "
                 src={`https://image.tmdb.org/t/p/original/${

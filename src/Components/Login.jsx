@@ -61,7 +61,6 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          // console.log(user);
           navigate("/home")
         })
         .catch((error) => {
